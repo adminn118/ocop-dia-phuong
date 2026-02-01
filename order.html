@@ -10,26 +10,38 @@
 <body>
     <header><h1>ĐẶT HÀNG TRỰC TUYẾN</h1></header>
     <div class="container">
-        <form onsubmit="thongBao(); return false;" style="max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 8px;">
-            <label>Họ và tên:</label><br>
-            <input type="text" required style="width: 100%; margin-bottom: 15px;"><br>
+    <h2 class="section-title">ĐẶT HÀNG SẢN PHẨM</h2>
+    <div class="content-card">
+        <form class="order-form">
+            <div class="form-group">
+                <label>Họ và tên:</label>
+                <input type="text" placeholder="Nhập tên của bạn...">
+            </div>
+            <div class="form-group">
+                <label>Số điện thoại:</label>
+                <input type="tel" placeholder="Nhập số điện thoại...">
+            </div>
+            <div class="form-group">
+                <label>Chọn sản phẩm:</label>
+                <select>
+                    <option>Khoai deo Lệ Thủy</option>
+                    <option>Nón Quy Hậu</option>
+                    <option>Rượu Tuy Lộc</option>
+                    <option>Nhang trầm Lệ Thủy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Địa chỉ nhận hàng:</label>
+                <textarea placeholder="Nhập địa chỉ chi tiết..."></textarea>
+            </div>
             
-            <label>Số điện thoại:</label><br>
-            <input type="tel" required style="width: 100%; margin-bottom: 15px;"><br>
+            <button type="submit" class="btn-detail" style="border: none; cursor: pointer; width: 100%; margin-bottom: 15px;">Gửi đơn hàng</button>
             
-            <label>Sản phẩm:</label><br>
-            <select style="width: 100%; margin-bottom: 15px;">
-                <option>Khoai deo Lệ Thủy</option>
-                <option>Rượu Tuy Lộc</option>
-                <option>Nón Quy Hậu</option>
-            </select><br>
-            
-            <label>Số lượng:</label><br>
-            <input type="number" min="1" value="1" style="width: 100%; margin-bottom: 15px;"><br>
-            
-            <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Gửi đơn hàng</button>
+            <div style="text-align: center;">
+                <a href="index.html" class="back-link">← Quay lại Trang chủ</a>
+            </div>
         </form>
-        <p style="text-align: center;"><a href="index.html">Quay lại trang chủ</a></p>
     </div>
+</div>
 </body>
 </html>
